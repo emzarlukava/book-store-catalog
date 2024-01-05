@@ -1,11 +1,12 @@
 ﻿using System.Globalization;
-#pragma warning disable
+
 namespace BookStoreCatalog
 {
     /// <summary>
     /// Represents a book publication.
     /// </summary>
     // Add class declaration.
+#pragma warning disable
     public class BookPublication
     {
         private string authorName;
@@ -179,7 +180,9 @@ namespace BookStoreCatalog
         /// </summary>
         // Add property.
         public BookNumber Isbn { get; init; }
+
         public BookAuthor AuthorName { get; }
+
         public string IsniCode { get; }
 
         /// <summary>

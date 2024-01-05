@@ -1,16 +1,18 @@
 ﻿using System.Globalization;
-#pragma warning disable
+
 namespace BookStoreCatalog
 {
     /// <summary>
     /// Represents a book price.
     /// </summary>
     // Add class declaration.
+#pragma warning disable
     public class BookPrice
     {
         // Add fields.
         private decimal amount;
         private string currency;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="BookPrice"/> class.
         /// </summary>
@@ -26,7 +28,7 @@ namespace BookStoreCatalog
         /// </summary>
         /// <param name="amount">An amount of money of a book.</param>
         /// <param name="currency">A price currency.</param>
-        // TODO Add constructor.
+        // Add constructor.
         public BookPrice(decimal amount, string currency)
         {
             ThrowExceptionIfAmountIsNotValid(amount);
